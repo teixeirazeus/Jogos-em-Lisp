@@ -1,7 +1,8 @@
+; Thiago S. Teixeira <teixeira.zeus@gmail.com>
+
 (defun printNreturn (value)
     (format t value)
-    value
-)
+    value)
 
 (defun get-number ()
     (let ((number (random 2 (make-random-state t))))
@@ -15,11 +16,11 @@
     (if (equal chute "cara")
         "Cara!"
         (if (equal chute "coroa")
-            "Coroa!"))
-)
+            "Coroa!")))
 
 (defun game ()
     (if (string= (prompt) (get-number))
     (format t "Você ganhou!")
     (format t "Você perdeu!")))
+
 (game)
